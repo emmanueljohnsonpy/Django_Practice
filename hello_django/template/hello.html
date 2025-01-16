@@ -1,0 +1,13 @@
+{% for i in animes %}
+{% load static %}
+<img src="{% static 'images/' %}{{i.img}}">
+<h1>Title : {{i.title | upper}}</h1>
+<h1>Summary : {{i.summary | default:'No data available'}}</h1>
+<h1>Year : {{i.year | length }}</h1>
+{% if i.sucess %}
+<h1>This anime is so awesome</h1>
+{% else %}
+<h1>This anime is worst</h1>
+{% endif %}
+<hr>
+{% endfor %}

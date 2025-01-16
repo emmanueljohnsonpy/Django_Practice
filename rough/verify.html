@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="verification-box">
+            <h1>Verification</h1>
+            <p>Enter the OTP you received in the email</p>
+            <input type="text" placeholder="Enter OTP">
+            <button class="verify-button">Verify</button>
+            <a href="#" class="resend-link">Resend OTP</a>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.verification-box {
+    text-align: center;
+    background: white;
+    padding: 40px 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #088178;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.email {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.verify-button {
+    background-color: #088178;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.verify-button:hover {
+    background-color: #25584f;
+}
+
+.resend-link {
+    display: block;
+    margin-top: 10px;
+    color: #00796b;
+    text-decoration: none;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}
+
+</style>

@@ -1,0 +1,10 @@
+li:hover{
+    background-color: #0056b3;
+    color: #fff; 
+    border-color: #0056b3;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item {
+margin-right: 10px; 
+}

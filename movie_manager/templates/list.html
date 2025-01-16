@@ -1,0 +1,41 @@
+{% extends 'blank_layout.html' %}
+
+{% block content %}
+
+<h1>list movies</h1>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table, th, td {
+        border: 2px solid black;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<table>
+<tr><th>Title</th>  <th>Description</th> <th>Year</th> <th>edit / delete</th></tr>
+{% for movie_obj in movies %}
+<tr>
+    <td>
+        <p>{{movie_obj.title | upper}}</p>
+        {% if movie_obj.poster %}
+        <img src="{{movie_obj.poster.url}}">
+        {% endif %}
+    </td> 
+    <td><p>{{movie_obj.description | upper}}</p></td>
+    <td><p>{{movie_obj.year | default:'no data available'}}</p></td> 
+    <td><a href="{% url 'edit' movie_obj.id %}">edit</a> / <a href="{% url 'delete' movie_obj.id %}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock content %}
