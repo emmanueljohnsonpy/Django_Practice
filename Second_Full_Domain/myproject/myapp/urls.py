@@ -5,4 +5,5 @@ urlpatterns = [
     path('hello/', views.hello, name="hello"),
     path('hai/', views.hai, name="hai"),
     path('loop/', views.loop, name="loop"),
+    path('context/', views.context, name="context"),
 ]
