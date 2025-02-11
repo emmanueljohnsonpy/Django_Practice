@@ -34,7 +34,7 @@ Django migrations are a way of managing changes to the database schema over time
 ### **Creating and Applying Migrations**  
 Whenever you make changes to your Django models (like adding a new field or modifying an existing one), follow these steps:  
 
-1. **Create Migration Files** (Translates model changes into database instructions)  
+1. **Create Migration Files** (migration files in Django translate model changes into database instructions in the form of Python files)  
    ```bash
    python manage.py makemigrations
    ```
