@@ -17,3 +17,6 @@ def context(request):
         "teams": ["Argentina", "PSG", "Barcelona"]
     }
     return render(request, "context.html", data)
+
+def status_code(request):
+    return HttpResponse("Custom message", status=200)
